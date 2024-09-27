@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 20px;
+            color: #5cb85c;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lung Cancer Prediction Result</h1>
+    {% if prediction == 'Yes' %}
+        <p>Prediction: You have a high risk of lung cancer.</p>
+    {% else %}
+        <p>Prediction: You do not have lung cancer.</p>
+    {% endif %}
+    <a href="/">Go back</a>
+</body>
+</html>
